@@ -1,8 +1,17 @@
 import React, { useState } from 'react';
 import { View, TouchableOpacity, Text, TextInput, Button, StyleSheet, Alert, Image, Dimensions } from 'react-native';
 
+function HomeScreen() {
+  return (
+    <View>
+      <Text>
+        Home Screen
+      </Text>
+    </View>
+  )
+}
 
-const SignUp = () => {
+function SignUpScreen() {
   const [usuario, setUsuario] = useState('');
   const [password, setPassword] = useState('');
 
@@ -73,7 +82,16 @@ const SignUp = () => {
         </View>
       </View>
     </View>
-  );
+
+  )
+
+}
+
+export default function App () {
+  return (
+    <SignUpScreen/>
+  )
+
 };
 
 const styles = StyleSheet.create({
@@ -166,5 +184,3 @@ const styles = StyleSheet.create({
   },
   
 });
-
-export default SignUp;
